@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="YT Solutions builds thoughtful websites, mobile apps, business software and AI-powered tools that help businesses move forward.">
+  <meta property="og:title" content="YT Solutions | Software built around your business">
+  <meta property="og:description" content="Web, mobile, business software and AI integration. Built with care, made to work.">
+  <meta property="og:type" content="website">
+  <title>YT Solutions | Software built around your business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#10110f;--panel:#171916;--panel2:#1d201c;--text:#f1f1e9;--muted:#a0a59a;--line:rgba(239,242,229,.13);--accent:#c8f169;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    .mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--muted)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(16,17,15,.88);backdrop-filter:blur(16px);z-index:20}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.06em;font-size:20px}.mark{width:32px;height:32px;border:1px solid rgba(200,241,105,.55);border-radius:9px;display:grid;place-items:center;color:var(--accent);font-size:13px;letter-spacing:-.08em}
+    .navlinks{display:flex;gap:32px;align-items:center;color:#c4c8bd;font-size:13px}.navlinks a:hover{color:var(--accent)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--accent);color:#171b10;padding:13px 18px;border-radius:4px;font-weight:800;font-size:12px;transition:transform .2s,background .2s}.nav-cta:hover,.button:hover{transform:translateY(-2px);background:#d7ff83}
+    .menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:4px}
+    .hero{padding:105px 0 92px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:620px;height:620px;border:1px solid rgba(200,241,105,.10);border-radius:50%;right:-250px;top:-220px;box-shadow:0 0 0 70px rgba(200,241,105,.018),0 0 0 140px rgba(200,241,105,.014);pointer-events:none}
+    .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:28px}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 15px var(--accent)}
+    h1{font-size:clamp(48px,7.2vw,92px);line-height:.99;letter-spacing:-.075em;max-width:900px;margin:0;font-weight:700}h1 em{font-style:normal;color:var(--accent)}
+    .hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:35px;margin-top:42px}.intro{font-size:16px;color:#b6bbb0;max-width:460px;line-height:1.8}.hero-actions{display:flex;align-items:center;gap:24px;white-space:nowrap}.text-link{font-size:12px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:5px}.text-link span{color:var(--accent);margin-left:8px}
+    .hero-foot{display:flex;justify-content:space-between;margin-top:105px;padding-top:20px;border-top:1px solid var(--line);gap:20px}
+    .ticker{padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#c2c7bb;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.ticker span{display:flex;align-items:center;gap:13px}.ticker b{color:var(--accent);font-size:15px}
+    section{padding:105px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-end;margin-bottom:48px}.section-head h2{font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-.065em;margin:13px 0 0;max-width:600px}.section-note{max-width:290px;color:var(--muted);font-size:13px;line-height:1.8}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.service{padding:30px;min-height:235px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:background .2s}.service:hover{background:var(--panel)}.service-top{display:flex;justify-content:space-between;align-items:center}.num{font:11px "DM Mono",monospace;color:var(--muted)}.service-icon{width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--accent);font-size:17px}.service h3{font-size:23px;letter-spacing:-.05em;margin:35px 0 9px}.service p{font-size:13px;color:var(--muted);max-width:420px;margin:0;line-height:1.8}
+    .statement{background:var(--accent);color:#171b10;padding:74px 0}.statement .mono{color:#48552d}.statement h2{font-size:clamp(34px,5.2vw,64px);line-height:1.08;letter-spacing:-.07em;max-width:900px;margin:18px 0 0}.statement p{font-size:14px;max-width:460px;line-height:1.8;margin:22px 0 0;color:#414b2b}
+    .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.work-card{background:var(--panel);border:1px solid var(--line);min-height:285px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.work-card:first-child{grid-column:span 2;min-height:330px}.work-card:before{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(200,241,105,.16);border-radius:50%;right:-85px;top:-100px;box-shadow:0 0 0 36px rgba(200,241,105,.025),0 0 0 72px rgba(200,241,105,.02)}.work-card:nth-child(2):before{border-radius:28%;transform:rotate(28deg)}.work-card:nth-child(3):before{border-radius:12%;transform:rotate(45deg)}.work-meta{display:flex;justify-content:space-between;position:relative;z-index:1}.work-title{position:relative;z-index:1}.work-title h3{font-size:30px;letter-spacing:-.06em;margin:0 0 7px}.work-title p{color:var(--muted);font-size:13px;margin:0;max-width:420px}.tag{display:inline-block;border:1px solid var(--line);padding:6px 9px;border-radius:2px;color:#c3c8bb;font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.step{padding:27px 25px 0 0}.step:not(:first-child){padding-left:25px;border-left:1px solid var(--line)}.step .num{color:var(--accent)}.step h3{font-size:20px;letter-spacing:-.04em;margin:24px 0 8px}.step p{color:var(--muted);font-size:13px;line-height:1.8;margin:0;max-width:290px}
+    .contact{background:var(--panel);border:1px solid var(--line);padding:clamp(28px,6vw,70px);display:grid;grid-template-columns:1.1fr .9fr;gap:45px}.contact h2{font-size:clamp(40px,5.5vw,68px);line-height:1;letter-spacing:-.07em;margin:15px 0 20px}.contact p{color:var(--muted);font-size:14px;max-width:410px;line-height:1.8}.contact-details{display:flex;flex-direction:column;justify-content:center;gap:23px}.contact-item{padding-bottom:17px;border-bottom:1px solid var(--line)}.contact-item .mono{display:block;margin-bottom:7px}.contact-item a{font-size:16px;font-weight:700}.contact-item a:hover{color:var(--accent)}
+    footer{padding:28px 0 36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:11px}.footer-right{display:flex;gap:22px}.footer-right a:hover{color:var(--accent)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:760px){.wrap{width:min(var(--max),calc(100% - 36px))}.nav{height:70px}.navlinks{display:none;position:absolute;top:69px;left:0;right:0;padding:22px 20px;background:#171916;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.navlinks.open{display:flex}.nav-cta{display:none}.menu{display:block}.hero{padding:78px 0 65px}.hero-bottom{align-items:flex-start;flex-direction:column}.hero-actions{flex-wrap:wrap}.hero-foot{margin-top:70px}.ticker{justify-content:flex-start;column-gap:25px}.ticker span:nth-child(n+4){display:none}section{padding:78px 0}.section-head{display:block}.section-note{margin-top:20px}.services{grid-template-columns:1fr}.service{min-height:205px;padding:24px}.work-grid{grid-template-columns:1fr}.work-card:first-child{grid-column:auto;min-height:285px}.process{grid-template-columns:1fr}.step,.step:not(:first-child){padding:23px 0;border-left:0;border-bottom:1px solid var(--line)}.step h3{margin-top:13px}.contact{grid-template-columns:1fr;gap:30px}.contact-details{gap:18px}footer{align-items:flex-start;flex-direction:column}.footer-right{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
+      <a class="brand" href="#top" aria-label="YT Solutions home"><span class="mark">YT</span><span>solutions<span style="color:var(--accent)">.</span></span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#work">Selected work</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
+      <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+  <main id="top">
+    <div class="wrap">
+      <section class="hero" style="padding-left:0;padding-right:0">
+        <div class="eyebrow mono"><span class="dot"></span> Independent software studio · Addis Ababa / Worldwide</div>
+        <h1>Good ideas deserve<br><em>software that works.</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">We design and build digital products that make business simpler. From your first website to the software that runs your operations, we turn real problems into useful technology.</p>
+          <div class="hero-actions"><a class="button" href="#contact">Tell us what you're building <span>↗</span></a><a class="text-link" href="#services">Explore services <span>↓</span></a></div>
+        </div>
+        <div class="hero-foot mono"><span>Thoughtful engineering</span><span>Built around your business</span><span>01 / 04</span></div>
+      </section>
+    </div>
+    <div class="ticker"><div class="wrap" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap"><span><b>✳</b> Web platforms</span><span><b>✳</b> Mobile apps</span><span><b>✳</b> Business systems</span><span><b>✳</b> AI integration</span></div></div>
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="mono">01 / What we do</div><h2>Technology with a<br>job to do.</h2></div><p class="section-note">No technology for technology's sake. We focus on dependable digital tools that solve a clear problem and create room to grow.</p></div>
+        <div class="services">
+          <article class="service reveal"><div class="service-top"><span class="num">01 — WEB</span><span class="service-icon">↗</span></div><h3>Web development</h3><p>Fast, responsive websites, customer portals, dashboards and custom web applications built for real-world use.</p></article>
+          <article class="service reveal"><div class="service-top"><span class="num">02 — MOBILE</span><span class="service-icon">▣</span></div><h3>Mobile applications</h3><p>Useful Android and iOS apps, from early product concepts to polished applications people can rely on.</p></article>
+          <article class="service reveal"><div class="service-top"><span class="num">03 — SYSTEMS</span><span class="service-icon">⌘</span></div><h3>Business software</h3><p>Purpose-built systems for inventory, procurement, operations and the workflows that keep your business moving.</p></article>
+          <article class="service reveal"><div class="service-top"><span class="num">04 — AI</span><span class="service-icon">✳</span></div><h3>AI integration</h3><p>Practical AI features, workflow automation and intelligent assistants integrated into the tools your team already uses.</p></article>
+        </div>
+      </div>
+    </section>
+    <div class="statement"><div class="wrap reveal"><div class="mono">A practical point of view</div><h2>We don't start with the code. We start with what needs to change.</h2><p>Good software is not measured by how complicated it looks. It is measured by the friction it removes and the value it creates.</p></div></div>
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="mono">02 / Selected work</div><h2>Built to solve<br>something real.</h2></div><p class="section-note">A few examples of products and platforms shaped around everyday needs. More work and case studies can be shared on request.</p></div>
+        <div class="work-grid">
+          <article class="work-card reveal"><div class="work-meta"><span class="tag">Operations platform</span><span class="num">01 / 03</span></div><div class="work-title"><h3>Veristock</h3><p>Procurement and F&B management software helping hospitality teams bring purchasing, inventory and operations into one connected workflow.</p></div></article>
+          <article class="work-card reveal"><div class="work-meta"><span class="tag">Mobile application</span><span class="num">02 / 03</span></div><div class="work-title"><h3>SouqNote</h3><p>A lightweight sales, inventory and credit-tracking app designed for independent merchants.</p></div></article>
+          <article class="work-card reveal"><div class="work-meta"><span class="tag">Booking platform</span><span class="num">03 / 03</span></div><div class="work-title"><h3>StyleAddis</h3><p>A service-booking experience connecting customers with local beauty and grooming businesses.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="approach" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="mono">03 / How we work</div><h2>Clear thinking.<br>Careful execution.</h2></div><p class="section-note">A collaborative process with direct communication, sensible decisions and a focus on shipping something useful.</p></div>
+        <div class="process">
+          <div class="step reveal"><span class="num">01 / Understand</span><h3>Find the real problem</h3><p>We get clear on your goals, users and constraints before deciding what to build.</p></div>
+          <div class="step reveal"><span class="num">02 / Build</span><h3>Make it work well</h3><p>We develop in focused steps, share progress and keep the important decisions visible.</p></div>
+          <div class="step reveal"><span class="num">03 / Improve</span><h3>Make it last</h3><p>We test, launch and help you improve the product as your business and needs evolve.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
+          <div><div class="mono">04 / Have a project in mind?</div><h2>Let's make<br>it useful.</h2><p>Tell us what you're trying to solve, what you have in mind, or where things are getting stuck. We'll take it from there.</p><a class="button" href="mailto:jo@yohan-ts.com?subject=Project%20inquiry%20%7C%20YT%20Solutions">Start a conversation <span>↗</span></a></div>
+          <div class="contact-details">
+            <div class="contact-item"><span class="mono">Email</span><a href="mailto:jo@yohan-ts.com">jo@yohan-ts.com ↗</a></div>
+            <div class="contact-item"><span class="mono">Website</span><a href="https://yohan-ts.com" target="_blank" rel="noopener">yohan-ts.com ↗</a></div>
+            <div class="contact-item"><span class="mono">Based in</span><a href="#top" style="cursor:default">Addis Ababa, Ethiopia</a></div>
+            <div class="contact-item"><span class="mono">Working with</span><a href="#top" style="cursor:default">Businesses worldwide</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap"><a class="brand" href="#top" style="font-size:15px"><span class="mark" style="width:26px;height:26px;font-size:10px">YT</span><span>solutions<span style="color:var(--accent)">.</span></span></a><span>© <span id="year"></span> YT Solutions. Built with intent.</span><div class="footer-right"><a href="https://yohan-ts.com" target="_blank" rel="noopener">Yohan T.</a><a href="mailto:jo@yohan-ts.com">Email ↗</a></div></div></footer>
+  <script>
+    const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+    menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'Close':'Menu'});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu'}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
