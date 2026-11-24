@@ -25,7 +25,13 @@
     .mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--muted)}
     .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(16,17,15,.88);backdrop-filter:blur(16px);z-index:20}
     .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.06em;font-size:20px}
-    .mark{width:32px;height:32px;border:1px solid rgba(200,241,105,.55);border-radius:9px;display:grid;place-items:center;color:var(--accent);font-size:13px;letter-spacing:-.08em}
+    .brand-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
     .navlinks{display:flex;gap:32px;align-items:center;color:#c4c8bd;font-size:13px}
     .navlinks a:hover{color:var(--accent)}
     .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--accent);color:#171b10;padding:13px 18px;border-radius:4px;font-weight:800;font-size:12px;transition:transform .2s,background .2s}
@@ -138,9 +144,9 @@
   <header class="nav">
     <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
       <a class="brand" href="#top" aria-label="YT Solutions home">
-        <span class="mark">YT</span>
-        <span>solutions<span style="color:var(--accent)">.</span></span>
-      </a>
+  <img src="logo(1).png" class="brand-logo" alt="YT Solutions logo">
+  <span>solutions<span style="color:var(--accent)">.</span></span>
+</a>
 
       <nav class="navlinks" id="navlinks" aria-label="Main navigation">
         <a href="#services">Services</a>
@@ -373,9 +379,9 @@
   <footer>
     <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
       <a class="brand" href="#top" style="font-size:15px">
-        <span class="mark" style="width:26px;height:26px;font-size:10px">YT</span>
-        <span>solutions<span style="color:var(--accent)">.</span></span>
-      </a>
+  <img src="logo(1).png" class="brand-logo" alt="YT Solutions logo">
+  <span>solutions<span style="color:var(--accent)">.</span></span>
+</a>
 
       <span>© <span id="year"></span> YT Solutions. Built with intent.</span>
 
